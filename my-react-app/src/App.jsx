@@ -2,18 +2,40 @@ import Content from "./component/content";
 import Header from "./component/header";
 import Footer from "./component/footer";
 import Navbar from "./component/navbar";
+import Student from "./component/props";
+import Button from "./component/props";
 
-function Me(){
-  return(<div>
 
-<Navbar/>
+// //component
+//  export function Me(){
+//   return(<div>
+
+// <Navbar/>
     
-    <h1><Header/></h1>
+//     <h1><Header/></h1>
 
-   <Content/>
-   <hr />
-   <Footer/>
+//    <Content/>
+//    <hr />
+//    <Footer/>
   
-  </div>)
+//   </div>)
+// }
+
+
+
+//props 
+//  export function App(){
+//   return(
+//     <div>
+//       <Student name="jaseel" age={21}/>
+//     </div>
+//   )
+// }
+
+export function App(){
+  const ShowAlert =()=>{
+    alert("hello !")
+  }
+  return<Button clickme={ShowAlert}/>
 }
-export default Me
+
