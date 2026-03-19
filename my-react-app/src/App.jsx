@@ -32,10 +32,21 @@ import Button from "./component/props";
 //   )
 // }
 
-export function App(){
-  const ShowAlert =()=>{
-    alert("hello !")
-  }
-  return<Button clickme={ShowAlert}/>
+// export function App(){
+//   const ShowAlert =()=>{
+//     alert("hello !")
+//   }
+//   return<Button clickme={ShowAlert}/>
+// }
+
+ export function App(){
+  return <Parent name ="jaseel"/>
+
+}
+function Parent({name}){
+  return <Child name={name}/>;
+}
+ function Child({name}){
+  return <h1>{name}</h1>
 }
 
