@@ -1,52 +1,17 @@
-import Content from "./component/content";
-import Header from "./component/header";
-import Footer from "./component/footer";
-import Navbar from "./component/navbar";
-import Student from "./component/props";
-import Button from "./component/props";
-
-
-// //component
-//  export function Me(){
-//   return(<div>
-
-// <Navbar/>
-    
-//     <h1><Header/></h1>
-
-//    <Content/>
-//    <hr />
-//    <Footer/>
-  
-//   </div>)
-// }
-
-
-
-//props 
-//  export function App(){
-//   return(
-//     <div>
-//       <Student name="jaseel" age={21}/>
-//     </div>
-//   )
-// }
-
-// export function App(){
-//   const ShowAlert =()=>{
-//     alert("hello !")
-//   }
-//   return<Button clickme={ShowAlert}/>
-// }
-
- export function App(){
-  return <Parent name ="jaseel"/>
-
+// import Toggle from "./component/Toggle";
+// import Counter from "./component/Counter";
+// import Form from "./component/Form";
+// import DeleteList from "./component/DeleteList";
+import MiniApp from "./component/MiniApp";
+function App(){
+  return(
+    <div>
+      {/* <Toggle/>
+      <Counter/>
+       <Form/>
+       <DeleteList/> */}
+       <MiniApp/>
+    </div>
+  )
 }
-function Parent({name}){
-  return <Child name={name}/>;
-}
- function Child({name}){
-  return <h1>{name}</h1>
-}
-
+ export default App;
