@@ -66,15 +66,33 @@
 
 
              //form
+// import React from 'react'
+// import Form from './component/Form/Form'
+// import LoginForm from './component/Form/LoginForm'
+
+// export default function App() {
+//   return (
+//     <div>
+//       {/* <Form/> */}
+//       <LoginForm/>
+//     </div>
+//   )
+// }
+
+
+        //style
 import React from 'react'
-import Form from './component/Form/Form'
-import LoginForm from './component/Form/LoginForm'
+import Inline from './component/style/Inline'
+import App1 from './component/style/CSSFile/app'
+import Css from './component/style/CSSModule/Css'
+import StyledComponents from './component/style/StyledComponents'
 
 export default function App() {
   return (
-    <div>
-      {/* <Form/> */}
-      <LoginForm/>
+    <div><Inline/>
+    <App1/>
+    <Css/>
+    <StyledComponents/>
     </div>
   )
 }
