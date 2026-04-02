@@ -29,19 +29,36 @@
 // }
 //  export default App;
 
-       //useEffect
 
+//        //useEffect
+// import React from 'react'
+// import Example from './component/useEffect/withEmpty'
+// import NoDependency from './component/useEffect/noDependency'
+// import DependencyValue from './component/useEffect/dependencyValue'
+
+// export default function App() {
+//   return (
+//     <div>
+//       <NoDependency/>
+//       <Example/>
+//       <DependencyValue/>
+
+//     </div>
+//   )
+// }
+
+             //useRef()
 import React from 'react'
-import Example from './component/useEffect/withEmpty'
-import NoDependency from './component/useEffect/noDependency'
-import DependencyValue from './component/useEffect/dependencyValue'
+import Example1 from './component/useRef/inputFocus'
+import StorePreviousValue from './component/useRef/storePreviousValue'
+import Timer from './component/useRef/Timer'
 
 export default function App() {
   return (
     <div>
-      <NoDependency/>
-      <Example/>
-      <DependencyValue/>
+      <Example1/>
+      <StorePreviousValue/>
+      <Timer/>
 
     </div>
   )
