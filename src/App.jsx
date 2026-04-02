@@ -47,19 +47,34 @@
 //   )
 // }
 
-             //useRef()
+//              //useRef()
+// import React from 'react'
+// import Example1 from './component/useRef/inputFocus'
+// import StorePreviousValue from './component/useRef/storePreviousValue'
+// import Timer from './component/useRef/Timer'
+
+// export default function App() {
+//   return (
+//     <div>
+//       <Example1/>
+//       <StorePreviousValue/>
+//       <Timer/>
+
+//     </div>
+//   )
+// }
+
+
+             //form
 import React from 'react'
-import Example1 from './component/useRef/inputFocus'
-import StorePreviousValue from './component/useRef/storePreviousValue'
-import Timer from './component/useRef/Timer'
+import Form from './component/Form/Form'
+import LoginForm from './component/Form/LoginForm'
 
 export default function App() {
   return (
     <div>
-      <Example1/>
-      <StorePreviousValue/>
-      <Timer/>
-
+      {/* <Form/> */}
+      <LoginForm/>
     </div>
   )
 }
