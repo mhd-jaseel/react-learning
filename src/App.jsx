@@ -96,17 +96,62 @@
 //     </div>
 //   )
 // }
+         //Reusable components
+// import React from 'react'
+// import ButtonComponents from './component/Reusable Components/ButtonComponents'
 
+// export default function App() {
+//   return (
+//     <div>
+//       <ButtonComponents text="login"/>
+//       <ButtonComponents text="singnup"/>
+//       <ButtonComponents text="logout"/>
+//     </div>
+//   )
+// }
+
+
+//       //Routing
+// import React from 'react'
+// import BrowserRouterExample from './component/Routing/BrowserRouter'
+// import RoutesExample from './component/Routing/RoutesExample'
+// import RouteExample from './component/Routing/RouteExample'
+// import LinkExample from './component/Routing/LinkExample'
+// import NavLinkExample from './component/Routing/NavLinkExample'
+// import DynamicRouteExample from './component/Routing/DynamicRouteExample'
+
+
+// export default function App() {
+//   return (
+//     <div>
+//       <BrowserRouterExample/>
+//       <RoutesExample/>
+//       <RouteExample/>
+//       <LinkExample/>
+//       <NavLinkExample/>
+//       <DynamicRouteExample/>
+//     </div>
+//   )
+// }
+
+// students App
 import React from 'react'
-import ButtonComponents from './component/Reusable Components/ButtonComponents'
-
+import { Route, Routes } from 'react-router-dom'
+import Navbar from './component/StudentNavbar/Navbar'
+import Home from './StudentsPages/Home'
+import About from './StudentsPages/About'
+import Student from './StudentsPages/Student'
+import StudentDetails from './StudentsPages/StudentDetails'
 export default function App() {
   return (
     <div>
-      <ButtonComponents text="login"/>
-      <ButtonComponents text="singnup"/>
-      <ButtonComponents text="logout"/>
+      <Navbar/>
+      <Routes>
+        <Route path='/' element={<Home/>}></Route>
+        <Route path='/about' element={<About/>}></Route>
+        <Route path='/student' element={<Student/>}></Route>
+        <Route path='/students/:id' element={<StudentDetails/>}></Route>
+      </Routes>
     </div>
   )
 }
-
