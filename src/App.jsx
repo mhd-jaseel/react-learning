@@ -80,19 +80,33 @@
 // }
 
 
-        //style
+//         //style
+// import React from 'react'
+// import Inline from './component/style/Inline'
+// import App1 from './component/style/CSSFile/app'
+// import Css from './component/style/CSSModule/Css'
+// import StyledComponents from './component/style/StyledComponents'
+
+// export default function App() {
+//   return (
+//     <div><Inline/>
+//     <App1/>
+//     <Css/>
+//     <StyledComponents/>
+//     </div>
+//   )
+// }
+
 import React from 'react'
-import Inline from './component/style/Inline'
-import App1 from './component/style/CSSFile/app'
-import Css from './component/style/CSSModule/Css'
-import StyledComponents from './component/style/StyledComponents'
+import ButtonComponents from './component/Reusable Components/ButtonComponents'
 
 export default function App() {
   return (
-    <div><Inline/>
-    <App1/>
-    <Css/>
-    <StyledComponents/>
+    <div>
+      <ButtonComponents text="login"/>
+      <ButtonComponents text="singnup"/>
+      <ButtonComponents text="logout"/>
     </div>
   )
 }
+
