@@ -135,23 +135,36 @@
 // }
 
 // students App
-import React from 'react'
+// import React from 'react'
+// import { Route, Routes } from 'react-router-dom'
+// import Navbar from './component/StudentNavbar/Navbar'
+// import Home from './StudentsPages/Home'
+// import About from './StudentsPages/About'
+// import Student from './StudentsPages/Student'
+// import StudentDetails from './StudentsPages/StudentDetails'
+// export default function App() {
+//   return (
+//     <div>
+//       <Navbar/>
+//       <Routes>
+//         <Route path='/' element={<Home/>}></Route>
+//         <Route path='/about' element={<About/>}></Route>
+//         <Route path='/student' element={<Student/>}></Route>
+//         <Route path='/students/:id' element={<StudentDetails/>}></Route>
+//       </Routes>
+//     </div>
+//   )
+// }
+
+import Home from './BlogPages/Home'
+import PostDetails from './BlogPages/PostDetails'
 import { Route, Routes } from 'react-router-dom'
-import Navbar from './component/StudentNavbar/Navbar'
-import Home from './StudentsPages/Home'
-import About from './StudentsPages/About'
-import Student from './StudentsPages/Student'
-import StudentDetails from './StudentsPages/StudentDetails'
+
 export default function App() {
   return (
-    <div>
-      <Navbar/>
-      <Routes>
-        <Route path='/' element={<Home/>}></Route>
-        <Route path='/about' element={<About/>}></Route>
-        <Route path='/student' element={<Student/>}></Route>
-        <Route path='/students/:id' element={<StudentDetails/>}></Route>
-      </Routes>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/post/:id" element={<PostDetails />} />
+    </Routes>
   )
 }
