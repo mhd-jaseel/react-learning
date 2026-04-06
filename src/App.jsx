@@ -155,16 +155,52 @@
 //     </div>
 //   )
 // }
+    //Blog app using fetch
+// import Home from './BlogPages/Home'
+// import PostDetails from './BlogPages/PostDetails'
+// import { Route, Routes } from 'react-router-dom'
 
-import Home from './BlogPages/Home'
-import PostDetails from './BlogPages/PostDetails'
-import { Route, Routes } from 'react-router-dom'
+// export default function App() {
+//   return (
+//     <Routes>
+//       <Route path="/" element={<Home />} />
+//       <Route path="/post/:id" element={<PostDetails />} />
+//     </Routes>
+//   )
+// }
+
+
+          //custom hook
+// import React from 'react'
+// import useCounter from './Hooks/CustomHook'
+// import Home from './Hooks/Home'
+
+// export default function App() {
+//   const{count,increment,decrement}=useCounter()
+//   return (
+//     <div>
+//       <h1>Count :{count}</h1>
+//       <button onClick={increment}>+</button>
+//       <button onClick={decrement}>-</button>
+//       <useCounter/>
+//       <Home/>
+//     </div>
+//   )
+// }
+ 
+
+
+import React from 'react'
+import ReactMemo from './PerformenceOptimization/ReactMemo'
+import UseMemo from './PerformenceOptimization/UseMemo'
+import UseCallback from './PerformenceOptimization/UseCallback'
 
 export default function App() {
+
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/post/:id" element={<PostDetails />} />
-    </Routes>
+    <div>
+      <ReactMemo/>
+      <UseMemo/>
+    </div>
   )
 }
